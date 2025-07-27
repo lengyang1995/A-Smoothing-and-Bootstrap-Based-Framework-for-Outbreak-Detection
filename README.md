@@ -1,4 +1,4 @@
-These datasets are associated with the manuscript titled "Comparison of a novel method based on Effective Reproduction Number with other approaches for detecting outbreaks of COVID-19 variants."
+These datasets are associated with the manuscript titled "A Smoothing and Bootstrap-Based Framework for Early Outbreak Detection"
 
 1: covid_case.xlsx – Contains daily local COVID-19 case counts in Singapore from 1 April 2021 to 12 February 2023. (Used for the main comparison)
 
