@@ -18,4 +18,4 @@ For code file:
 
 3: others_covid – Implements other outbreak detection methods applied to the same COVID-19 case data in Singapore.
 
-4: Model 1–3 – Contains code for both proposed and comparison methods used in the simulation study based on Models 1 through 3.
+4: model 1–3 – Contains code for both proposed and comparison methods used in the simulation study based on Models 1 through 3.
