@@ -1,4 +1,4 @@
-These datasets/code are associated with the manuscript titled "A Smoothing and Bootstrap-Based Framework for Early Outbreak Detection"
+These datasets/codes are associated with the manuscript titled "A Smoothing and Bootstrap-Based Framework for Early Outbreak Detection".
 
 For data file:
 
