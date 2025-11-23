@@ -37,7 +37,7 @@ bootstraptest1=function(H,mah_original,calculateR,fit){
   
   results = list(lower = CIRARLOWER,upper=CIRARUPPER)
   return (results)
-}
+} ## draw bootstrap samples
 
 bootstraptestOR2=function(t1,t2,K,H,case,dummy,calculateR,bootstraptest1){
   ress1 = foreach(jj = t1:t2,.combine='rbind',.packages=c('forecast','dplyr','data.table','stats'))%dopar%{
@@ -72,7 +72,7 @@ bootstraptestOR2=function(t1,t2,K,H,case,dummy,calculateR,bootstraptest1){
     }
   }
   return(output)
-}
+} ## no smoothing 
 
 bootstraptestMA2=function(t1,t2,K,H,case,dummy,calculateR,bootstraptest1,mah_all){
   ress1 = foreach(jj = t1:t2,.combine='rbind',.packages=c('forecast','dplyr','data.table','stats'))%dopar%{
@@ -107,7 +107,7 @@ bootstraptestMA2=function(t1,t2,K,H,case,dummy,calculateR,bootstraptest1,mah_all
     }
   }
   return(output)
-}
+} ## MAH smoothing
 
 bootstraptestM2=function(t1,t2,K,H,case,dummy,calculateR,bootstraptest1,ma_all){
   ress1 = foreach(jj = t1:t2,.combine='rbind',.packages=c('forecast','dplyr','data.table','stats'))%dopar%{
@@ -142,7 +142,7 @@ bootstraptestM2=function(t1,t2,K,H,case,dummy,calculateR,bootstraptest1,ma_all){
     }
   }
   return(output)
-}
+} ## MA smoothing
 
 
 pred_list2=matrix(data=NA, nrow = 4, ncol = 18)
@@ -224,7 +224,7 @@ bootstraptest1=function(H,mah_original,calculateR,fit){
   
   results = list(lower = CIRARLOWER,upper=CIRARUPPER)
   return (results)
-}
+} ## draw bootstrap samples
 
 bootstraptestOR2=function(t1,t2,K,H,case,dummy,calculateR,bootstraptest1){
   ress1 = foreach(jj = t1:t2,.combine='rbind',.packages=c('forecast','dplyr','data.table','stats'))%dopar%{
@@ -259,7 +259,7 @@ bootstraptestOR2=function(t1,t2,K,H,case,dummy,calculateR,bootstraptest1){
     }
   }
   return(output)
-}
+}  ## no smoothing 
 
 bootstraptestMA2=function(t1,t2,K,H,case,dummy,calculateR,bootstraptest1,mah_all){
   ress1 = foreach(jj = t1:t2,.combine='rbind',.packages=c('forecast','dplyr','data.table','stats'))%dopar%{
@@ -294,7 +294,7 @@ bootstraptestMA2=function(t1,t2,K,H,case,dummy,calculateR,bootstraptest1,mah_all
     }
   }
   return(output)
-}
+} ## MAH smoothing
 
 bootstraptestM2=function(t1,t2,K,H,case,dummy,calculateR,bootstraptest1,ma_all){
   ress1 = foreach(jj = t1:t2,.combine='rbind',.packages=c('forecast','dplyr','data.table','stats'))%dopar%{
@@ -329,7 +329,7 @@ bootstraptestM2=function(t1,t2,K,H,case,dummy,calculateR,bootstraptest1,ma_all){
     }
   }
   return(output)
-}
+} ## MA smoothing
 
 
 pred_list3=matrix(data=NA, nrow = 4, ncol = 18)
@@ -411,7 +411,7 @@ bootstraptest1=function(H,mah_original,calculateR,fit){
   
   results = list(lower = CIRARLOWER,upper=CIRARUPPER)
   return (results)
-}
+} ## draw bootstrap samples
 
 bootstraptestOR2=function(t1,t2,K,H,case,dummy,calculateR,bootstraptest1){
   ress1 = foreach(jj = t1:t2,.combine='rbind',.packages=c('forecast','dplyr','data.table','stats'))%dopar%{
@@ -446,7 +446,7 @@ bootstraptestOR2=function(t1,t2,K,H,case,dummy,calculateR,bootstraptest1){
     }
   }
   return(output)
-}
+}  ## no smoothing 
 
 bootstraptestMA2=function(t1,t2,K,H,case,dummy,calculateR,bootstraptest1,mah_all){
   ress1 = foreach(jj = t1:t2,.combine='rbind',.packages=c('forecast','dplyr','data.table','stats'))%dopar%{
@@ -481,7 +481,7 @@ bootstraptestMA2=function(t1,t2,K,H,case,dummy,calculateR,bootstraptest1,mah_all
     }
   }
   return(output)
-}
+} ## MAH smoothing
 
 bootstraptestM2=function(t1,t2,K,H,case,dummy,calculateR,bootstraptest1,ma_all){
   ress1 = foreach(jj = t1:t2,.combine='rbind',.packages=c('forecast','dplyr','data.table','stats'))%dopar%{
@@ -516,7 +516,7 @@ bootstraptestM2=function(t1,t2,K,H,case,dummy,calculateR,bootstraptest1,ma_all){
     }
   }
   return(output)
-}
+} ## MA smoothing
 
 
 pred_list4=matrix(data=NA, nrow = 4, ncol = 18)
