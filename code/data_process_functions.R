@@ -8,7 +8,7 @@ library(deSolve)
 library(readxl)
 library(surveillance)
 library(optimParallel)
-################################### Calculate Rt assuming H=3
+################################### Calculate Rt assuming H=5
 calculateR=function(dat){
   
   presum=c()
@@ -20,7 +20,7 @@ calculateR=function(dat){
     cursum=c(cursum,sum(dat[i:(i+4)]))
   }
   RNEW=cursum/presum
-  RNEW=RNEW[5:length(RNEW)]
+  #RNEW=RNEW[5:length(RNEW)]
   results=list(mean=RNEW)
   return (results)
 }
